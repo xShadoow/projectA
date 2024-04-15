@@ -4,7 +4,7 @@ const createGame = {
     index(request, response){
         logger.info("createGame rendering");
         const viewData = {
-            title: "createGame",
+            title: "Create Game",
         };
         response.render("createGame", viewData);
     }
