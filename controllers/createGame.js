@@ -6,7 +6,7 @@ const createGame = {
         const viewData = {
             title: "createGame",
         };
-        response.render("Create Game", viewData);
+        response.render("createGame", viewData);
     }
 };
 
