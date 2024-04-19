@@ -1,44 +1,80 @@
-<div class="vh-100 bg-dark bg-gradient text-white">
-    <div class = "container">
+<div class="container text-white">
 
-        <div class="card-body text-center pt-5">
-            <h1 class="display-3">{{ title }}</h1>
-        </div>
+    <div class="card-body text-center pt-5">
+        <h1 class="display-3">{{ title }}</h1>
+    </div>
 
-        <div>
-            <div class = "text-center pt-5">
-                <p>
-                    Anzahl von Spielern:
-                </p>
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                    <label class="btn btn-outline-primary" for="btnradio1">2 Spieler</label>
+    <div class="text-center pb-5">
+        <form>
 
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio2">3 Spieler</label>
+            <div class="pt-5">
+                <p>Username:</p>
+                <input type="text" class="form-control" id="username">
+            </div>
 
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio3">4 Spieler</label>
+            <div class="pt-5">
+
+                <p>Anzahl an Spielern:</p>
+
+                <div class="btn-group" role="group" aria-label="Anzahl an Spielern">
+
+                    <input type="radio" class="btn-check" name="btnplayers" id="btnplayers2" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnplayers2">2</label>
+
+                    <input type="radio" class="btn-check" name="btnplayers" id="btnplayers3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnplayers3">3</label>
+
+                    <input type="radio" class="btn-check" name="btnplayers" id="btnplayers4" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnplayers4">4</label>
+
+                    <input type="radio" class="btn-check" name="btnplayers" id="btnplayers5" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnplayers5">5</label>
+
+                    <input type="radio" class="btn-check" name="btnplayers" id="btnplayers6" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnplayers6">6</label>
+
+                    <input type="radio" class="btn-check" name="btnplayers" id="btnplayers7" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnplayers7">7</label>
+
+                    <input type="radio" class="btn-check" name="btnplayers" id="btnplayers8" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnplayers8">8</label>
+
                 </div>
             </div>
 
-            <div class = "text-center pt-5">
-                <p>
-                    Anzahl an Runden:
-                </p>
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                    <label class="btn btn-outline-primary" for="btnradio1">1 Runde</label>
+            <div class="pt-5">
 
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio2">2 Runden</label>
+                <p>Anzahl an Runden:</p>
 
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio3">3 Runden</label>
+                <div class="btn-group" role="group" aria-label="Anzahl an Runden">
+
+                    <input type="radio" class="btn-check" name="btnrounds" id="btnrounds1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnrounds1">1 Runde</label>
+
+                    <input type="radio" class="btn-check" name="btnrounds" id="btnrounds2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnrounds2">2 Runden</label>
+
+                    <input type="radio" class="btn-check" name="btnrounds" id="btnrounds3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnrounds3">3 Runden</label>
+
+                    <input type="radio" class="btn-check" name="btnrounds" id="btnrounds4" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnrounds4">4 Runden</label>
+
                 </div>
             </div>
-        </div>
+
+            <div class="pt-5">
+                <p>Passwort:</p>
+                <input type="password" class="form-control" id="password">
+            </div>
+
+            <div class="pt-5">
+                <button type="submit" class="btn btn-primary btn-lg">Spiel erstellen</button>
+            </div>
+
+        </form>
     </div>
 </div>
+<br>
 
 {{> footer}}
